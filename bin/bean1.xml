@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    
+    
+    <bean id="emp1" class="employee.Employee_details">
+    
+    <property name="empid" value="012"></property>
+    <property name="empname" value="Pavi"></property>
+    <property name="empaddress" value="cbe"></property>
+    <property name="empphone" value="987654"></property>
+    <property name="emp_education" ref="emp_edu"></property>
+       
+    </bean>
+    
+    <bean id="emp_edu" class="employee.Employee_education">
+    
+    <property name="emp_qualif" value="B.E"></property>
+    <property name="emp_exp" value="four"></property>
+    
+    
+    
+    
+    </bean>
+    
+    
+    
+    
+    
+    
+    </beans>
